@@ -28,13 +28,14 @@ function App() {
     [tasks]
   );
 
-  const getTasksComplated = useMemo(() => {
+  const getTasksComplated = () => {
     setTasksComplated(tasks.filter((task) => task.done));
-  }, [tasks]);
+  };
 
   useEffect(() => {
-    getTasksComplated;
-  }, []);
+    getTasksComplated();
+    console.log(tasksComplated);
+  }, [tasks]);
 
   return (
     <div className="App flex bg-gradient-to-r from-slate-900 to-slate-900 justify-center items-center min-h-screen flex-col px-5 md ">

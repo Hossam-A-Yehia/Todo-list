@@ -17,7 +17,7 @@ export default function ({ onAdd }) {
       <input
         className="flex-1 bg-slate-900 border-2 rounded-l-md border-blue-500 p-3 focus:outline-none text-slate-100 font-semibold "
         type="text"
-        placeholder="Add a task here..."
+        placeholder="Add a task here"
         value={task}
         onChange={(e) => setTask(e.target.value)}
         onKeyDown={(e) => {
@@ -25,8 +25,9 @@ export default function ({ onAdd }) {
         }}
       />
       <button
+        disabled={task.length === 0}
         type="button"
-        className="border-2 rounded-r-md border-blue-500 text-white bg-blue-500 w-11 h-full text-3xl flex items-center justify-center "
+        className="border-2 rounded-r-md border-blue-500 text-white bg-blue-500 w-11 h-full text-3xl flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed "
         onClick={handleAdd}
       >
         <FaPlus className="text-xl hover:rotate-180 duration-300" />

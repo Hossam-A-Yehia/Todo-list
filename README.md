@@ -1,7 +1,5 @@
 # Simple to-do list using React with Tailwind
 
-This is just a workaround to explore vite with react and tailwind.
-
 ## Features
 
 1. Display a list of to-do items.
@@ -10,17 +8,11 @@ This is just a workaround to explore vite with react and tailwind.
 
 3. Allow users to mark to-do items as completed.
 
-4. Provide a count of total to-do items and completed to-do items.
+4. display a count of total to-do items and completed to-do items.
 
-5. Use React hooks (useState, useEffect, useCallback, useMemo)
+5. Mark to-do items as complete.
 
-6. Allow users to mark to-do items as completed.
-
-7. Allow users to mark to-do items as completed.
-
-This will start a server in http://localhost:5173
-
-# Live preview
+6. Using React Testing for test the three components (AddTask - TaskButton - TaskItem).
 
 # Screenshots
 

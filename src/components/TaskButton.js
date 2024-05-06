@@ -1,8 +1,6 @@
 import { IoMdDoneAll, IoMdClose } from "react-icons/io";
 
 export default function ({ type, onClick }) {
-  console.log("Task Btns");
-
   return (
     <button
       type="button"
@@ -10,11 +8,11 @@ export default function ({ type, onClick }) {
       onClick={onClick}
     >
       {type === "done" ? (
-        <span className=" font-bold ">
+        <span data-testid="done" className=" font-bold ">
           <IoMdDoneAll />{" "}
         </span>
       ) : (
-        <span className=" font-bold">
+        <span data-testid="delete" className=" font-bold">
           {" "}
           <IoMdClose color="red" />{" "}
         </span>
